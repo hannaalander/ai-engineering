@@ -3,9 +3,9 @@
 import csv
 import ollama
 
-prompt = "Kan man läsa Mittuniversitets utbildning \"informatik med inriktning systemutveckling\" på distans?"
+prompt = "What color is the Swedish flag?"
 
-models = ["gemma:2b", "llama3.2:1b"]
+models = ["qwen2.5", "llama3.2:1b"]
 
 results = []
 
