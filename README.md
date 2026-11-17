@@ -41,6 +41,6 @@ ________________________________________________________________________________
 Assignment 2 - LLM as judge
 
 Reflections:
-- First we got an error because the code crashed when it did not found a model, we solved it by adding a try-catch in both ask_capital and llm_as_a_judge_agrees. 
-- Then we ran the tests and they worked and got an OK in the terminal, so that issue where in the code rather then the test or model.
-- To see the output we added a print to make sure that the answers were correct and after running the program several times we saw that it gave correct answers every time with no variation.
+- Initially we got a response error because the code crashed when it did not found a model (an unhandled exception). We solved it by implementing a try-catch in both ask_capital and llm_as_a_judge_agrees to make sure that it returned "Failure" and False, as intended when attempting to use a non-existing model, instead of crashing. 
+- When re-running the tests they were successful and we got an OK in the terminal.
+- To verify the output we added a print in ask_capital to make sure that the answers were correct and after running the program several times we saw that it gave correct answers every time with no variation.
